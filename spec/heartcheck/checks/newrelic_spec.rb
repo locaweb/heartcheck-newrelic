@@ -1,7 +1,7 @@
 RSpec.describe Heartcheck::Checks::Newrelic do
   describe '#validate' do
     it 'does not record an error when everything is fine' do
-      allow(NewRelic::Agent).to receive(:notify_error)
+      allow(NewRelic::Agent).to receive(:notice_error)
 
       new_relic = described_class.new
 
@@ -11,7 +11,7 @@ RSpec.describe Heartcheck::Checks::Newrelic do
     end
 
     it 'record error when exception is raised' do
-      allow(NewRelic::Agent).to receive(:notify_error)
+      allow(NewRelic::Agent).to receive(:notice_error)
         .and_raise(StandardError)
 
       new_relic = described_class.new
