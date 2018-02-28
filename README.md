@@ -1,5 +1,7 @@
 # Heartcheck::Newrelic
 
+[![Build Status](https://travis-ci.org/locaweb/heartcheck-newrelic.svg)](https://travis-ci.org/locaweb/heartcheck-newrelic)
+
 A [Heartcheck](https://github.com/locaweb/heartcheck) plugin for the
 [NewRelic](https://newrelic.com/) monitoring service.
 
