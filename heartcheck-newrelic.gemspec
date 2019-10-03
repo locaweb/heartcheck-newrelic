@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
   spec.summary = 'A Heartcheck plugin for New Relic'
   spec.homepage = 'https://github.com/locaweb/heartcheck-newrelic'
 
-  spec.files = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^spec/}) }
+  spec.files = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(spec|bin)/}) }
   spec.require_paths = ['lib']
 
   spec.add_dependency 'heartcheck', '~> 1.0'
