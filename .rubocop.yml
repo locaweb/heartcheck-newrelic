@@ -1,0 +1,9 @@
+AllCops:
+  Exclude:
+    - 'heartcheck-newrelic.gemspec'
+
+Style/Documentation:
+  Enabled: false
+
+Naming/RescuedExceptionsVariableName:
+  Enabled: false

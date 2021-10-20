@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe Heartcheck::Checks::Newrelic do
   describe '#validate' do
     it 'does not record an error when everything is fine' do
