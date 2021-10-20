@@ -5,9 +5,9 @@ module Heartcheck
     class Newrelic < Base
       def validate
         NewRelic::Agent.increment_metric('Custom/NewRelicMonitoring')
-      rescue StandardError => e
+      rescue StandardError => exception
         append_error('could not report to New Relic server.')
-        append_error(e.message)
+        append_error(exception.message)
       end
 
       private
